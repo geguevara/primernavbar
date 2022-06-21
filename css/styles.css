@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    background-image: url(/img/acuarela.jpg);
+
+}
+header{
+    margin: 20px 20px;
+    background-color: #fbf3e1;
+    border: 1px solid #bc6c25;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+img{
+    width: 80px;
+    padding: 0 0 2px 12px
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+li:hover{
+    color: #c09f34;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1.5em rgb(241, 178, 118);
+}
