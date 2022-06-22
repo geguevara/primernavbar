@@ -10,7 +10,9 @@ html{
 }
 body{
     background-image: url(/img/acuarela.jpg);
-
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 header{
     margin: 20px 20px;
