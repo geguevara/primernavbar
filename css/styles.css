@@ -13,11 +13,12 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Work Sans', sans-serif;
 }
 header{
     margin: 20px 20px;
-    background-color: #fbf3e1;
-    border: 1px solid #bc6c25;
+    background-color: #fffdfa;
+    border: 1px solid #5b8b57;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -26,23 +27,75 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-img{
-    width: 80px;
-    padding: 0 0 2px 12px
-}
-ul{
+.ul-navbar{
     list-style-type: none;
     display: flex;
 }
-li{
+.ul-navbar li{
     margin: 10px;
     padding: 10px;
-    font-family: 'Work Sans', sans-serif;
+    
     text-transform: uppercase;
     cursor: pointer;
 }
-li:hover{
-    color: #c09f34;
+.ul-navbar li:hover{
+    color: #d6ae2a;
     text-decoration: underline;
     text-shadow: 1px 1px 1.5em rgb(241, 178, 118);
+}
+.img-fondo{
+    width: 80px;
+    padding: 0 0 2px 12px
+}
+
+main{
+    margin-top: 5%;
+    background-color: #fffcf6f5;
+    padding: 80px;
+    line-height: 1.7em; 
+    display: flex;
+}
+.esencia{
+    padding: 0 80px 0 20px;
+}
+.esencia h1{
+    padding: 30px 0;
+}
+.img-esencia{
+    width: 30%;
+    height: auto;
+}
+
+.foto2{
+    background-image: url(/img/cosmetica1.jpg);
+    min-height: 500px;
+    position: relative;
+    opacity: 0.9; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+.nosotros{
+    background-color: #fbf3e1; 
+    text-align: center;
+    padding: 30px;
+    line-height: 1.6em;
+    
+}
+.nosotros h2{
+    padding: 10px;
+}
+.nosotros ul{
+    list-style: none;
+}
+footer{
+    background-color: #5d7e4a;
+    color: #f8eac9;
+    text-align: center;
+    height: 5%;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
 }
