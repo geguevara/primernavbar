@@ -13,12 +13,14 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 1rem;
+   /*  background: linear-gradient(to right, rgb(190, 224, 187), rgb(237, 247, 218)); */
 }
 header{
-    margin: 20px 20px;
+    margin: 1.2rem auto;
     background-color: #fffdfa;
-    border: 1px solid #5b8b57;
+    border: 1px solid #93b66c;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -27,66 +29,102 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+main{
+    margin-top: 3%;
+   /*  padding: 5rem 3rem; */
+    line-height: 1.8em; 
+}
+
+footer{
+    background-color: #5d7e4a;
+    color: #f8eac9;
+    text-align: center;
+    height: 5%;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* Clases */
+
+.img-fondo{
+    width: 7rem;
+    padding: 0 0 .1rem 1.5rem;
+    cursor: pointer;
+}
+
 .ul-navbar{
     list-style-type: none;
     display: flex;
 }
 .ul-navbar li{
-    margin: 10px;
-    padding: 10px;
-    
+    /* margin: 10px;
+    padding: 10px; */
+    margin: 0 20px;
     text-transform: uppercase;
-    cursor: pointer;
-}
-.ul-navbar li:hover{
-    color: #d6ae2a;
-    text-decoration: underline;
-    text-shadow: 1px 1px 1.5em rgb(241, 178, 118);
-}
-.img-fondo{
-    width: 80px;
-    padding: 0 0 2px 12px
+    position: relative;
+    }
+
+.ul-navbar li a{
+    text-decoration: none;
+    color: #455c38;
 }
 
-main{
-    margin-top: 7%;
-    background-color: #fffcf6f5;
-    padding: 60px 40px;
-    line-height: 1.7em; 
+.ul-navbar li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #80a869;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s ease-out;
+}
+.ul-navbar li:hover::before{
+    /* text-decoration: underline; 
+    text-shadow: 1px 1px 2em rgb(241, 177, 118); */
+    width: 100%;
+}
+
+/* Main */
+.container-esencia{
+    /* padding: 0 80px 0 20px; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
+    padding: 50px;
+    background-color: #fffcf6f5;
+    gap: 7%;
 }
-.esencia{
-    width: 60%;
-    padding: 0 80px 0 20px;
-}
-.esencia h1{
-    padding-bottom: 30px;
+.container-esencia h1{
+    padding-bottom: 40px;
+    color: #2c3825;
 }
 .img-esencia{
-    margin: 10px;
-    overflow: hidden;
+    margin: 10px 0;
+   /*  overflow: hidden; */
 }
 .img-esencia img{
-    width: 500px;
+    max-width: 35rem;
 }
+
 .foto2{
     background-image: url(/img/cosmetica1.jpg);
-    min-height: 500px;
+    min-height: 350px;
+    /* opacity: 0.9;  */
     position: relative;
-    opacity: 0.9; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  
 }
+
 .nosotros{
     background-color: #fbf3e1; 
     text-align: center;
-    padding: 30px;
+    padding: 4%;
     line-height: 1.6em;
     
 }
@@ -96,12 +134,39 @@ main{
 .nosotros ul{
     list-style: none;
 }
-footer{
-    background-color: #5d7e4a;
-    color: #f8eac9;
+
+.foto3{
+    background-image: url(/img/cosmetica4.jpg);
+    min-height: 350px; 
+    /*opacity: 0.9;  */
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.card-1{
+    background-color: #bcd1a4;
+    border-radius: 10px;
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.card-1 img{
+    max-width: 15rem;
+    border-radius: 5px;
+}
+.card-1 h2{
+    padding: 1.3em;
     text-align: center;
-    height: 5%;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 1px;
 }
