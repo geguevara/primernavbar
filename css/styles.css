@@ -18,7 +18,8 @@ body{
    /*  background: linear-gradient(to right, rgb(190, 224, 187), rgb(237, 247, 218)); */
 }
 header{
-    margin: 1.2rem auto;
+    margin: 1.2rem auto; 
+    width: 100%;
     background-color: #fffdfa;
     border: 1px solid #93b66c;
     border-radius: 10px;
@@ -135,38 +136,100 @@ footer{
     list-style: none;
 }
 
-.foto3{
-    background-image: url(/img/cosmetica4.jpg);
-    min-height: 350px; 
-    /*opacity: 0.9;  */
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 .container-card{
+    background-color: #fcffefef ;
+    text-align: center;
+}
+.container-card h2{
+    padding: 3rem;
+}
+.subcontainer-card{
     display: flex;
-    align-items: center;
     flex-direction: row;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .card-1{
-    background-color: #bcd1a4;
+    background-color: #afd490;
     border-radius: 10px;
-    width: 30%;
+    max-width: 25%;
+    margin: 2rem;
     padding: 2rem;
+    box-shadow: 0 0 1rem #597c3c;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
 }
 .card-1 img{
-    max-width: 15rem;
+    max-width: 12rem;
     border-radius: 5px;
 }
 .card-1 h2{
     padding: 1.3em;
     text-align: center;
+}
+.fa-thin, .fa-brands{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.contact-us{
+    background-color: #709652;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-contact{
+    background-color: #4a5c2d;
+    padding: 1.5rem;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 1em rgb(139, 196, 138);
+}
+.container-contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: #f8f5ee;
+    padding-bottom: 3rem;
+}
+.container-contact-sub{
+    display: flex;
+    gap: 3%;     
+}
+.contact-1{
+    background-color: #fdf4de;
+    border-radius: 15px;
+    list-style: none;
+    padding: 1rem;
+    width: 350px;
+}
+.contact-1 ul{
+    list-style: none;
+    align-items: center;
+}
+.container-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-redes i{
+    font-size: 1.3em;
+    color: rgb(46, 41, 28);
+    padding: 1em;
+    margin: 1.5em;
+    position: relative;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: #cedac4;
+    transition: all 20ms linear 10ms;
+}
+.container-redes i:hover{
+    background-color: rgb(248, 252, 8);
+    font-size: 1.4em;
+    box-shadow: 0 0 1em rgb(139, 196, 138);
+}
+.maps{
+    margin: 30px 0;
 }
