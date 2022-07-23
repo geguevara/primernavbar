@@ -7,6 +7,7 @@
 html{
     height: auto;
     min-height: 100%;
+    overflow-x: auto;
 }
 body{
     background-image: url(/img/acuarela.jpg);
@@ -14,7 +15,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Work Sans', sans-serif; 
-    font-size: 1rem;
+    overflow-x: auto;
+    font-size: 18px;
    /*  background: linear-gradient(to right, rgb(190, 224, 187), rgb(237, 247, 218)); */
 }
 header{
@@ -42,7 +44,7 @@ footer{
     color: #f8eac9;
     text-align: center;
     height: 5%;
-    padding: 20px;
+    padding: 1.1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
 }
@@ -63,7 +65,7 @@ footer{
 .ul-navbar li{
     /* margin: 10px;
     padding: 10px; */
-    margin: 0 20px;
+    margin: 0 1rem;
     text-transform: uppercase;
     position: relative;
     }
@@ -91,24 +93,27 @@ footer{
 
 /* Main */
 .container-esencia{
-    /* padding: 0 80px 0 20px; */
+    
+    gap: 3%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 3.5rem;
     background-color: #fffcf6f5;
-    gap: 7%;
+   /*  gap: 7%; */
 }
 .container-esencia h1{
-    padding-bottom: 40px;
-    color: #2c3825;
+    font-size: xx-large;
+    padding-bottom: 2rem;
+    color: #d1921c;
 }
 .img-esencia{
     margin: 10px 0;
    /*  overflow: hidden; */
 }
 .img-esencia img{
-    max-width: 35rem;
+    max-width: 24rem;
+    height: 23rem;
 }
 
 .foto2{
@@ -139,9 +144,11 @@ footer{
 .container-card{
     background-color: #fcffefef ;
     text-align: center;
+    padding: 3%;
 }
 .container-card h2{
     padding: 3rem;
+    color: rgb(39, 28, 6);
 }
 .subcontainer-card{
     display: flex;
@@ -150,10 +157,10 @@ footer{
     justify-content: space-evenly;
 }
 .card-1{
-    background-color: #afd490;
+    background-color: #cde0bc;
     border-radius: 10px;
     max-width: 25%;
-    margin: 2rem;
+    margin: 3rem 0;
     padding: 2rem;
     box-shadow: 0 0 1rem #597c3c;
     display: flex;
@@ -174,18 +181,18 @@ footer{
     font-weight: 900;
 }
 .contact-us{
-    background-color: #709652;
+    background-color: #819c6b;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
 }
 .container-contact{
-    background-color: #4a5c2d;
+    background-color: #738556;
     padding: 1.5rem;
     margin: 20px 0;
     border-radius: 15px;
-    box-shadow: 0 0 1em rgb(139, 196, 138);
+    box-shadow: 0 0 1em rgb(121, 175, 120);
 }
 .container-contact h2{
     text-align: center;
@@ -203,7 +210,7 @@ footer{
     border-radius: 15px;
     list-style: none;
     padding: 1rem;
-    width: 350px;
+    /* width: 21rem; */
 }
 .contact-1 ul{
     list-style: none;
@@ -230,6 +237,51 @@ footer{
     font-size: 1.4em;
     box-shadow: 0 0 1em rgb(139, 196, 138);
 }
+
 .maps{
-    margin: 30px 0;
+    margin-right: 3%;
+    max-width: auto;
+    height: 22rem;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgb(215, 243, 148);
+}
+
+/* Mediaqueries */
+
+@media(max-width: 1040px){
+     body{
+         font-size: 15px;
+     }
+     .container-contact{
+        box-shadow: none;
+        background-color: #819c6b;
+     }
+}
+@media(max-width: 920px){
+    .subcontainer-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1{
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .container-contact-sub{
+        display: flex;
+        flex-direction: column;
+        gap:1%;
+    }
+    .contact-1{
+        max-width: 28rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+}
+@media (max-width:710px) {
+    .maps{
+        width: 15rem;
+
+    }
 }
