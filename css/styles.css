@@ -58,6 +58,15 @@ footer{
     cursor: pointer;
 }
 
+.checkbutton{
+    font-size: 2rem;
+    color: #455c38;
+    line-height: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
 .ul-navbar{
     list-style-type: none;
     display: flex;
@@ -228,7 +237,7 @@ footer{
     margin: 1.5em;
     position: relative;
     bottom: 10px;
-    border-radius: 50%;
+    border-radius: 50%; 
     background-color: #cedac4;
     transition: all 20ms linear 10ms;
 }
@@ -245,12 +254,16 @@ footer{
     border-radius: 10px;
     box-shadow: 0 0 1rem rgb(215, 243, 148);
 }
+/*    i d    */
 
+#check{
+    display: none;
+}
 /* Mediaqueries */
 
 @media(max-width: 1040px){
      body{
-         font-size: 15px;
+        font-size: 16px;
      }
      .container-contact{
         box-shadow: none;
@@ -280,6 +293,26 @@ footer{
     
 }
 @media (max-width:710px) {
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ .ul-navbar{
+        right: 0;
+    }
+    .ul-navbar{
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: hsla(98, 46%, 84%, 0.863);
+        top: 6.7em;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .ul-navbar li{
+        margin: 1rem 0;
+    }
     .maps{
         width: 15rem;
 
